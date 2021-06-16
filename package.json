@@ -1,0 +1,18 @@
+{
+  "name": "ratio_calculator",
+  "version": "1.0.0",
+  "description": "A ratio calculator",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "compile": "electron-forge make"
+  },
+  "author": "Dale Doster",
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "^8.3.0"
+  },
+  "dependencies": {
+    "jquery": "^3.5.1"
+  }
+}

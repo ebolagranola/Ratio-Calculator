@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link href="../css/main.css" rel="stylesheet" type="text/css">
+    <link href="../css/framework.css" rel="stylesheet" type="text/css">
+    <!-- <script src="../../node_modules/jquery/dist/jquery.min.js"></script> -->
+    <script>window.$ = window.jQuery = require('jquery');</script>
+    <script type="text/javascript" src="../js/renderer.js"></script>
+    <script src="../js/main.js"></script>
+    <script src="../js/ratioCalculator.js"></script>
+
+  </head>
+
+  <body class="bg-dark">
+    <div id="title-bar">
+      <div id="title-bar-btns">
+        <button id="close-btn" class="btn-hover-scale"></button>
+        <button id="min-btn" class="btn-hover-scale"></button>
+      </div>
+    </div>
+
+    <div id="ratio-wrapper">
+      <h1>Ratio Calculator</h1>
+      <div class="flex-container ratio-calc">
+        <div id="ratio1" class="division-wrapper">
+          <div class="shadow-box-top">
+            <input id="inputA" type="text">
+            <div class="input-shadow" style="background: #60BFAE;"></div>
+          </div>
+          <br>
+          <p class="ratio-operator">•</p>
+          <br>
+            <div class="shadow-box">
+              <input id="inputB" type="text">
+              <div class="input-shadow" style="background: #4B73C2;"></div>
+            </div>
+        </div>
+
+        <p>=</p>
+
+        <div id="ratio2" class="division-wrapper">
+          <div class="shadow-box-top">
+            <input id="inputC" type="text">
+            <div class="input-shadow" style="background: #F0C96F;"></div>
+          </div>
+          <br>
+          <p class="ratio-operator">•</p>
+          <br>
+            <div class="shadow-box">
+              <input id="inputD" type="text">
+              <div class="input-shadow" style="background: #F46244;"></div>
+            </div>
+        </div>
+      </div>
+
+      <div class="ratio-result flex-container">
+        <p>magic#</p>
+        <p>???</p>
+      </div>
+
+      <div class="flex-container">
+        <button id="ratio-calculate" type="button">Calculate!</button>
+      </div>
+    </div>
+
+  </body>

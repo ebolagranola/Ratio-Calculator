@@ -1,0 +1,48 @@
+body {
+  user-select: none;
+  font-family: "Lucida Console", "Courier New", monospace;
+  color: #fff;
+}
+
+p {
+  font-family: "Lucida Console", "Courier New", monospace;
+  font-size: 24px;
+  display: inline-block;
+}
+
+.flex-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+button, input {
+  background: #4e4e4e;
+  color: #fff;
+  font-family: "Lucida Console", "Courier New", monospace;
+  border: none;
+  border-radius: 4px;
+}
+
+button:focus, input:focus {
+  outline: 0;
+}
+
+.shadow-box {
+  position: relative;
+}
+
+.shadow-box-top {
+  top: 16px;
+  position: relative;
+}
+
+.input-shadow {
+  width: 96px;
+  height: 100%;
+  position: absolute;
+  border-radius: 4px;
+  top: 6px;
+  left: 18px;
+  z-index: -1;
+}
