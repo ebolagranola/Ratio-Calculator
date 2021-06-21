@@ -36,7 +36,8 @@ body {
 
 #title-bar {
   -webkit-app-region: drag;
-  height: 32px;
+  display: flex;
+  height: 60px;
   padding: 0px;
   margin: 0px;
   background-color: #1e1e1e;
@@ -98,9 +99,9 @@ body {
   margin: 0px 24px;
 }
 
-#ratio-wrapper h1 {
+#title-bar h1 {
   color: #11ca5b;
-  margin: 16px;
+  margin: 16px 32px;
 }
 
 .ratio-calc {
@@ -122,6 +123,7 @@ body {
   height: 24px;
   font-size: 24px;
   padding: 4px;
+  border: 1px solid #fff;
 }
 
 .ratio-operator {
@@ -200,5 +202,41 @@ body {
   }
   100% {
     color: red;
+  }
+}
+
+#ratio1 p.ratio-operator {
+  animation-name: bounce1;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes bounce1 {
+  0% {
+    transform: translateY(-11px);
+  }
+  50% {
+    transform: translateY(15px);
+  }
+  100% {
+    transform: translateY(-11px);
+  }
+}
+
+#ratio2 p.ratio-operator {
+  animation-name: bounce2;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes bounce2 {
+  0% {
+    transform: translateY(15px);
+  }
+  50% {
+    transform: translateY(-11px);
+  }
+  100% {
+    transform: translateY(15px);
   }
 }

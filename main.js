@@ -3,7 +3,7 @@ const {ipcMain} = require('electron');
 
 function createWindow() {
   let win = new BrowserWindow({
-    width: 480,
+    width: 1000,
     height: 480,
     'minWidth': 480,
     'minHeight': 480,
@@ -14,7 +14,7 @@ function createWindow() {
     }
   });
 
-  // win.webContents.openDevTools();
+  win.webContents.openDevTools();
   win.setMenu(null);
   win.loadFile('./src/views/index.html');
 }

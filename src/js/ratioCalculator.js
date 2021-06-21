@@ -27,7 +27,7 @@ $(window).on("load", function() {
       solution = inputs[2]/(inputs[0]/inputs[1]);
     }
 
-    $('.ratio-result').children().eq(1).text(parseFloat(solution.toFixed(4)));
+    $('.ratio-result').children().eq(1).text(parseFloat(solution.toFixed(2)));
 
     cleanInput = 0;
   }
