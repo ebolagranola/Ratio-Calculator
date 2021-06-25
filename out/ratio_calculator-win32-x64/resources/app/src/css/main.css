@@ -36,7 +36,8 @@ body {
 
 #title-bar {
   -webkit-app-region: drag;
-  height: 32px;
+  display: flex;
+  height: 60px;
   padding: 0px;
   margin: 0px;
   background-color: #1e1e1e;
@@ -98,9 +99,9 @@ body {
   margin: 0px 24px;
 }
 
-#ratio-wrapper h1 {
+#title-bar h1 {
   color: #11ca5b;
-  margin: 0px 16px;
+  margin: 16px 32px;
 }
 
 .ratio-calc {
